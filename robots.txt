@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://veneermonet.vercel.app/sitemap.xml

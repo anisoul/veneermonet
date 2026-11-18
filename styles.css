@@ -1,0 +1,88 @@
+/* Veneer Monet — plum / gold / ivory. Clean premium, mobile-first. */
+:root {
+  --plum: #4A1E3D;
+  --plum-deep: #35132C;
+  --gold: #C69E3E;
+  --gold-soft: #E3C878;
+  --ivory: #FDF8F3;
+  --cream: #F7EFE6;
+  --ink: #2B1A24;
+  --body: #5C4A54;
+  --line: #E8DCCF;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--ivory); color: var(--body);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px; line-height: 1.65;
+}
+h1, h2, h3, .wordmark {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: var(--plum); font-weight: 700; line-height: 1.2;
+}
+h1 { font-size: 2.1rem; margin: 0 0 0.6rem; }
+h2 { font-size: 1.55rem; margin: 2.2rem 0 0.7rem; }
+h3 { font-size: 1.2rem; margin: 1.4rem 0 0.4rem; }
+p { margin: 0 0 1rem; }
+a { color: var(--plum); }
+img { max-width: 100%; height: auto; display: block; }
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+/* header */
+header.site { background: var(--plum); color: var(--ivory); }
+.header-inner { max-width: 960px; margin: 0 auto; padding: 18px 20px 14px;
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.logo { width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--gold); object-fit: cover; }
+.wordmark { color: var(--ivory); font-size: 1.7rem; margin: 0; letter-spacing: 0.5px; }
+.tagline { color: var(--gold-soft); font-size: 0.9rem; margin: 2px 0 0; }
+nav.main { max-width: 960px; margin: 0 auto; padding: 0 20px 14px; }
+nav.main a { color: var(--gold-soft); text-decoration: none; margin-right: 22px;
+  font-size: 0.95rem; }
+nav.main a:hover, nav.main a.active { color: #fff; text-decoration: underline; }
+.banner { width: 100%; border-radius: 10px; margin: 26px 0 4px; border: 1px solid var(--line); }
+
+/* hero */
+.hero { display: grid; grid-template-columns: 1fr; gap: 22px; padding: 34px 0 10px; }
+@media (min-width: 700px) { .hero { grid-template-columns: 1.1fr 0.9fr; align-items: center; } }
+.hero .lead { font-size: 1.12rem; color: var(--ink); }
+.hero-img { border-radius: 10px; border: 1px solid var(--line); }
+.hero-img figcaption { font-size: 0.85rem; color: var(--body); text-align: center; padding-top: 8px; }
+
+/* offer box */
+.offer { background: var(--cream); border: 1px solid var(--gold);
+  border-radius: 12px; padding: 22px 22px 12px; margin: 26px 0; }
+.offer h2 { margin-top: 0; }
+.offer .gift { font-size: 1.3rem; }
+
+/* buttons */
+.btn { display: inline-block; background: var(--gold); color: var(--plum);
+  font-weight: 700; text-decoration: none; padding: 12px 22px; border-radius: 8px;
+  margin: 6px 0 14px; }
+.btn:hover { background: var(--gold-soft); }
+.btn-ghost { display: inline-block; border: 1.5px solid var(--plum); color: var(--plum);
+  font-weight: 700; text-decoration: none; padding: 10px 20px; border-radius: 8px; margin: 6px 0 14px; }
+
+/* book cards */
+.books { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 18px 0; }
+@media (min-width: 700px) { .books { grid-template-columns: 1fr 1fr 1fr; } }
+.book { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+.book h3 { margin-top: 0; }
+.book .price { color: var(--plum); font-weight: 700; }
+.book .pages { font-size: 0.9rem; color: var(--body); }
+
+/* looks */
+.look { margin: 18px 0; }
+.look img { border-radius: 10px; border: 1px solid var(--line); max-width: 460px; margin: 0 auto; }
+.look figcaption { text-align: center; font-size: 0.9rem; padding-top: 8px; }
+
+/* tally */
+.tally-wrap { margin: 14px 0 6px; }
+.tally-wrap iframe { width: 100%; border: 0; }
+.fineprint { font-size: 0.9rem; }
+
+/* footer */
+footer.site { background: var(--plum); color: var(--ivory); margin-top: 44px; }
+footer.site .wrap { padding: 26px 20px; }
+footer.site a { color: var(--gold-soft); text-decoration: none; margin-right: 16px; }
+footer.site p { margin: 0 0 8px; }
+footer.site .small { font-size: 0.85rem; color: #D8C4CE; }
